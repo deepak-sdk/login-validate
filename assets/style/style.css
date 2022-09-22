@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+::placeholder,
+input {
+  font-family: "Nunito", sans-serif;
+}
+p,
+h2,
+.email-container,
+.password-comtainer {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(94, 144, 252);
+}
+.main-login-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+
+  background-color: rgb(21, 36, 121);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container {
+  display: flex;
+  height: fit-content;
+}
+.login-container-left img {
+  max-width: 600px;
+  height: 100%;
+  object-fit: cover;
+}
+.login-container-right {
+  background-color: beige;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.login-container-right h2 {
+  font-size: 2rem;
+}
+.login-container-right p {
+  font-weight: 800;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  color: gray;
+}
+.input-container input {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  outline: none;
+}
+.forgot-password {
+  font-weight: 800;
+  align-self: flex-end;
+}
+.btn {
+  background-color: rgba(20, 20, 80, 0.9);
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(0.989);
+}
+.err {
+  color: crimson;
+  margin-top: 5px;
+}
+
+.pwt-msg{
+  font-size: 10px;
+  margin-top: 2px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-login-container {
+    height: 100%;
+  }
+  .login-container {
+    flex-direction: column;
+    /* height: ; */
+  }
+  .login-container-left img {
+    width: 100%;
+  }
+  .login-container-right {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  .login-container{
+    width: 100%;
+    justify-content: center;
+  }
+  .login-container-left img {
+    width: 400px;
+    object-fit: cover;
+    object-position: left;
+  }
+  .login-container-right {
+    width: auto;
+  }
+}

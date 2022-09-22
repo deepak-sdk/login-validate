@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <script defer src="/assets/js/script.js"></script>
+</head>
+
+<body>
+    <main class="main-login-container">
+        <section class="login-container">
+            <div class="login-container-left">
+                <img src="./assets/img/left.png" alt="login-banner">
+            </div>
+            <div class="login-container-right">
+                <h2>Log In</h2>
+                <p>New User? <a href="#">Create an account</a></p>
+                <form class='login-form' action="" id="login">
+                    <div class="input-container email-container">
+                        <label for="email" id="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <small class="email-err err err-visible"></small>
+                    </div>
+                    <div class="input-container password-container">
+                        <label for="password" id="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                        <small class="pwt-msg">*Password Should Contain min 8 letter, with at least a symbol, upper and lower
+                            case letters and a number</small>
+                        <small class="password-err err"></small>
+                    </div>
+                    <a class='forgot-password' href="#">Forgot Password?</a>
+
+                    <div class="button-container">
+                        <button class="btn" id="submit">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
